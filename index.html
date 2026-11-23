@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zehan Askia Rahmadani (Zee) - Mahasiswa Kewirausahaan UIN Mataram</title>
+<meta name="description" content="Zee dari Senaru, Lombok Utara. Mahasiswa Program Studi Kewirausahaan, FEBI UIN Mataram yang suka DIY, memasak, dan berkarya dengan tangan sendiri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#fdeef2; --rose:#f6c3d3; --berry:#b8386b; --plum:#4a1f36; --milk:#fffaf6; --mute:#7c5566;
+  --serif:'Pacifico','Brush Script MT',cursive; --sans:'Fredoka',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--plum);background:var(--blush) url('background.png') center/cover fixed no-repeat}
+body::before{content:"";position:fixed;inset:0;background:rgba(255,240,246,.3);pointer-events:none;z-index:-1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px}
+.wrap{max-width:980px;margin:auto;padding:0 20px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(255,248,225,.94);backdrop-filter:blur(8px);border-bottom:3px dotted var(--rose)}
+nav .in{max-width:980px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--serif);font-size:1.5rem;text-decoration:none;color:var(--berry)}
+.menu{display:flex;gap:2px;list-style:none}
+.menu a{display:block;padding:6px 13px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.95rem}
+.menu a:hover{background:var(--rose)}
+.burger{display:none;background:var(--berry);color:#fff;border:0;border-radius:10px;width:42px;height:38px;font-size:1.2rem;cursor:pointer}
+@media(max-width:760px){
+  .burger{display:block}
+  .menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--milk);padding:8px 20px 16px;border-bottom:1px solid var(--rose)}
+  .menu.open{display:flex}
+}
+
+/* hero */
+.hero{padding:34px 0 6px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:44px 30px 48px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,6.2vw,3.7rem);line-height:1.2;color:var(--berry);text-shadow:3px 3px 0 #fff}
+.hero .nick{display:block;color:var(--plum);font-family:var(--sans);font-weight:500;text-shadow:none;font-size:.38em;margin-top:6px}
+.lead{font-size:1.15rem;max-width:36ch;margin:18px 0 24px;color:var(--plum)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 26px;border-radius:99px;font-weight:700;text-decoration:none;border:2px solid var(--berry);transition:background .2s,color .2s}
+.btn.fill{background:var(--berry);color:#fff}
+.btn.fill:hover{background:var(--plum);border-color:var(--plum)}
+.btn.line:hover{background:var(--berry);color:#fff}
+.portrait{position:relative;justify-self:center;width:min(100%,320px)}
+.portrait::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:repeating-conic-gradient(var(--rose) 0 10deg,transparent 10deg 20deg)}
+.portrait img,.portrait .ph{position:relative;display:block;width:100%;aspect-ratio:1/1;border-radius:50%;object-fit:cover;border:8px solid #fff;background:var(--rose)}
+.portrait .ph{display:none;place-items:center;font-size:5rem}
+@media(max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center;padding-top:36px}
+  .portrait{order:-1;width:220px}
+  .lead{margin-left:auto;margin-right:auto}
+  .btns{justify-content:center}
+}
+
+/* sections */
+section{padding:18px 0}
+section .wrap,.hero .wrap{background:rgba(255,248,225,.96);border:3px dotted var(--berry);border-radius:30px;box-shadow:0 8px 0 var(--rose);width:calc(100% - 28px);padding:32px 26px}
+.hero .wrap{padding:44px 30px 48px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.3;margin-bottom:20px;color:var(--berry);text-shadow:2px 2px 0 #fff}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
+.about p{margin-bottom:14px;max-width:62ch}
+.facts{list-style:none;background:#fff;border-radius:22px;padding:8px 22px;border:1px solid var(--rose)}
+.facts li{padding:12px 0;border-bottom:1px dashed var(--rose)}
+.facts li:last-child{border:0}
+.facts b{display:block;color:var(--berry);font-size:.9rem}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+
+.path{list-style:none;position:relative;max-width:640px}
+.path::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--berry);opacity:.35}
+.path li{position:relative;padding:0 0 26px 44px}
+.path li::before{content:"";position:absolute;left:3px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--milk);border:4px solid var(--berry)}
+.path li.now::before{background:var(--berry)}
+.path h3{font-weight:600;font-size:1.12rem;line-height:1.3}
+.path p{color:var(--mute);font-size:.97rem}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.skill{background:#fff;border-radius:22px;padding:24px;border:1px solid var(--rose)}
+.skill .ic{font-size:2rem;line-height:1}
+.skill h3{font-weight:600;color:var(--berry);font-size:1.18rem;margin:10px 0 6px}
+.skill p{color:var(--mute);font-size:.98rem}
+
+.exp{display:grid;gap:14px;max-width:700px}
+.exp article{background:#fff;border-radius:18px;padding:16px 20px;border-left:6px solid var(--berry)}
+.exp h3{font-weight:600;font-size:1.05rem;line-height:1.35}
+.exp p{color:var(--mute);font-size:.95rem}
+
+.story{background:var(--plum);color:#fff;border-radius:28px;padding:34px 26px;text-align:center}
+.story p{font-family:var(--serif);font-size:clamp(1.25rem,3.6vw,1.8rem);line-height:1.6;max-width:30ch;margin:auto}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{background:#fff;border:1px solid var(--rose);border-radius:99px;padding:6px 18px;font-weight:600}
+
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;max-width:760px}
+.links a{display:block;background:#fff;border:1px solid var(--rose);border-radius:18px;padding:16px 20px;text-decoration:none;font-weight:700;transition:border-color .2s}
+.links a:hover{border-color:var(--berry)}
+.links small{display:block;font-weight:400;color:var(--mute)}
+footer{margin-top:18px;background:rgba(255,248,225,.96);border-top:3px dotted var(--berry);color:var(--plum);text-align:center;padding:26px 20px;font-weight:600}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="in">
+    <a class="brand" href="#top">Zee</a>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#perjalanan">Pendidikan</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#minat">Hobi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Zehan Askia Rahmadani<span class="nick">biasa dipanggil Zee</span></h1>
+      <p class="lead">Mahasiswa Program Studi Kewirausahaan, Fakultas Ekonomi dan Bisnis Islam, UIN Mataram. Dari Senaru, Lombok Utara, suka membuat sesuatu dengan tangan sendiri.</p>
+      <div class="btns">
+        <a class="btn fill" href="#tentang">Kenalan dengan Zee</a>
+        <a class="btn line" href="#kontak">Hubungi saya</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="img/foto-profil.jpg" alt="Foto Zehan Askia Rahmadani" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <div class="ph" aria-hidden="true">🎀</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="tentang"><div class="wrap">
+  <h2>Halo, saya Zee</h2>
+  <div class="about">
+    <div>
+      <p>Saya Zee dari Dusun Pawang Karya, Desa Senaru, Lombok Utara. Saat ini saya kuliah di Program Studi Kewirausahaan, Fakultas Ekonomi dan Bisnis Islam (FEBI) UIN Mataram.</p>
+      <p>Saya suka DIY, memasak, mempayet baju, dan membuat kerajinan handmade. Dari hobi itu saya belajar bahwa ide kecil bisa tumbuh jadi usaha kalau dikerjakan dengan sabar dan konsisten.</p>
+      <p>Di kampus saya aktif sebagai anggota HMPS Kewirausahaan di Divisi HAM dan Advokasi, dan ikut jadi panitia di beberapa kegiatan. Saya senang belajar langsung dari lapangan.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Nama lengkap</b>Zehan Askia Rahmadani</li>
+      <li><b>Asal</b>Dusun Pawang Karya, Desa Senaru, Kecamatan Bayan, Kabupaten Lombok Utara, NTB</li>
+      <li><b>Kampus</b>Mahasiswa Program Studi Kewirausahaan, Fakultas Ekonomi dan Bisnis Islam (FEBI), UIN Mataram</li>
+      <li><b>Organisasi</b>Anggota HMPS Kewirausahaan, Divisi HAM dan Advokasi</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="perjalanan"><div class="wrap">
+  <h2>Perjalanan pendidikan</h2>
+  <ol class="path">
+    <li><h3>MI Baiturrahmah NW Pawang Karya</h3><p>Madrasah Ibtidaiyah</p></li>
+    <li><h3>MTs Baiturrahmah NW Pawang Karya</h3><p>Madrasah Tsanawiyah, sambil mondok di Pondok Pesantren Lombok Tahfidz Center Zam-zam</p></li>
+    <li><h3>SMA Negeri 1 Bayan</h3><p>Sekolah menengah atas, sambil mondok di Pondok Pesantren Lombok Tahfidz Center Zam-zam</p></li>
+    <li class="now"><h3>UIN Mataram</h3><p>Program Studi Kewirausahaan, Fakultas Ekonomi dan Bisnis Islam (FEBI). Sedang berjalan.</p></li>
+  </ol>
+</div></section>
+
+<section id="skill"><div class="wrap">
+  <h2>Yang saya kuasai</h2>
+  <div class="skills">
+    <div class="skill"><div class="ic">📿</div><h3>Merangkai manik-manik</h3><p>Membuat gelang, gantungan kunci, dan aksesoris dari manik-manik.</p></div>
+    <div class="skill"><div class="ic">🎨</div><h3>Mendesain bentuk gelang</h3><p>Merancang bentuk, warna, dan model sendiri, atau menyesuaikannya dengan keinginan orang lain.</p></div>
+    <div class="skill"><div class="ic">✨</div><h3>Mempayet baju</h3><p>Menghias baju dengan payet supaya tampil lebih cantik.</p></div>
+    <div class="skill"><div class="ic">🧋</div><h3>Memasak makanan dan minuman viral</h3><p>Sering membuat makanan dan minuman viral TikTok, lalu membagikannya.</p></div>
+  </div>
+</div></section>
+
+<section id="pengalaman"><div class="wrap">
+  <h2>Pengalaman</h2>
+  <div class="exp">
+    <article><h3>Panitia Festival Budaya</h3><p>HMPS Kewirausahaan</p></article>
+    <article><h3>Panitia PBAK / PKKMB</h3><p>UIN Mataram</p></article>
+    <article><h3>Sering ikut bazar di festival pondok dan kegiatan di luar kampus</h3><p>Berjualan di berbagai acara festival</p></article>
+    <article><h3>Peserta bazar di kegiatan Lomba</h3><p>Auditorium (Audit) UIN Mataram</p></article>
+    <article><h3>Peserta bazar saat PBAK / PKKMB</h3><p>Berjualan langsung kepada mahasiswa UIN Mataram</p></article>
+  </div>
+</div></section>
+
+<section id="minat"><div class="wrap">
+  <h2>Dunia kecil saya</h2>
+  <div class="story"><p>Belajar bisnis di kelas, lalu mencobanya dengan tangan sendiri.</p></div>
+  <div class="chips">
+    <span class="chip">Memasak</span><span class="chip">Mempayet baju</span><span class="chip">DIY</span><span class="chip">Membuat gelang handmade</span><span class="chip">Membuat gantungan kunci</span><span class="chip">Berwirausaha kecil-kecilan</span>
+  </div>
+</div></section>
+
+<section id="kontak"><div class="wrap">
+  <h2>Mari terhubung</h2>
+  <div class="links">
+    <a href="https://instagram.com/zehnnasr_" target="_blank" rel="noopener">Instagram pribadi<small>@zehnnasr_</small></a>
+    <a href="https://wa.me/6287815503585?text=Halo%20Zee%2C%20saya%20mau%20berkenalan" target="_blank" rel="noopener">WhatsApp<small>0878-1550-3585</small></a>
+    <a href="https://instagram.com/zeecraftt_" target="_blank" rel="noopener">Karya handmade saya<small>@zeecraftt_</small></a>
+    <a href="https://maps.google.com/?q=Senaru,Lombok+Utara" target="_blank" rel="noopener">Lokasi<small>Senaru, Lombok Utara</small></a>
+  </div>
+</div></section>
+
+</main>
+
+<footer>Made with love by Zee - Senaru, Lombok Utara 💗</footer>
+
+<script>
+var b=document.getElementById("burger"),m=document.getElementById("menu");
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+m.addEventListener("click",function(){m.classList.remove("open");b.setAttribute("aria-expanded",false)});
+</script>
+</body>
+</html>
